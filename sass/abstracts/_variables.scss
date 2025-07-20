@@ -1,0 +1,13 @@
+// Colors
+$primary-color: #1e90ff;
+$secondary-color-1: #ff4d9d;
+$secondary-color-2: #32dfa4;
+$background-color: #121419;
+$cards-grey: #212329;
+
+// Border animation
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}

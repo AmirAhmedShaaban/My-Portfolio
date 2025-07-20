@@ -1,0 +1,126 @@
+.card {
+  perspective: 150rem;
+  height: 50rem;
+  width: 45rem;
+  position: relative;
+
+  &__side {
+    height: 50rem;
+    width: 45rem;
+    backface-visibility: hidden;
+    box-shadow: 0 0.2rem 1rem rgba(#000, 0.8);
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &--front {
+      background-color: $cards-grey;
+      border-radius: 12px;
+    }
+
+    &--back {
+      background-color: $background-color;
+      transform: rotateY(180deg);
+      border-radius: 12px;
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0deg);
+  }
+
+  &__image-wrapper {
+    position: relative;
+    width: 85%;
+    height: 21rem;
+    border-radius: 12px;
+    top: 3.3rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+    &__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      z-index: 2;
+      background-size: cover;
+      box-shadow: 0 0.2rem 2.4rem rgba(#000, 0.8);
+    }
+
+    &__img--Blaban {
+      background-image: url(../Imgs/Projects/Blaban-Project.png);
+    }
+
+    &__img--Portfolio {
+      background-image: url(../Imgs/Projects/Portfolio-Project.png);
+    }
+
+    &__img-- {
+      background-image: url(../);
+    }
+
+    &::after,
+    &::before {
+      box-sizing: content-box;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: conic-gradient(from var(--angle), transparent 80%, #1e90ff);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      border-radius: 12px;
+      padding: 0.4rem;
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+      animation: 3s spin linear infinite;
+      transition: all 0.1s;
+    }
+
+    &::before {
+      filter: blur(1.5rem);
+      opacity: 0.5;
+    }
+  }
+
+  &__text {
+    width: max-content;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: $primary-color;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1.6rem;
+  }
+
+  &__btn1 {
+    position: absolute;
+    top: 22%;
+    left: 28%;
+  }
+
+  &__btn2.btn.btn--blue {
+    position: absolute;
+    top: 42%;
+    left: 29.2%;
+  }
+
+  &__btn3.btn.btn--noanimation {
+    position: absolute;
+    top: 62%;
+    left: 28.2%;
+  }
+}

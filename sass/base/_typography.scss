@@ -1,0 +1,61 @@
+/*
+// Font sizes
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+// WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: $background-color;
+  color: #fff;
+}
+
+.heading-primary {
+  &--sub {
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2.4rem;
+  }
+
+  &--main {
+    display: block;
+    font-size: 6.2rem;
+    color: $primary-color;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+}
+
+.heading-description {
+  font-size: 2.4rem;
+  hyphens: auto;
+  margin-bottom: 3.2rem;
+  line-height: 1.6;
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 4.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center !important;
+  background-image: linear-gradient(to right, #0b3d91, #1e90ff, #3ca9ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.5);
+  }
+}

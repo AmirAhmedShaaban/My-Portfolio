@@ -1,0 +1,73 @@
+.bulks {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+
+  &__bulk {
+    height: 30rem;
+    width: 40rem;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s;
+    text-align: center;
+
+    &__text {
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 3px;
+      line-height: 1.2;
+      margin-top: 1.6rem;
+
+      & span {
+        text-transform: none;
+        display: block;
+      }
+    }
+
+    &--design {
+      background-image: linear-gradient(
+        to right bottom,
+        #d5aa1c 0%,
+        #c63d54 100%
+      );
+    }
+
+    &--frontend {
+      background-image: linear-gradient(
+        to right bottom,
+        #236985 0%,
+        #43a16a 45%,
+        #eddd53 100%
+      );
+    }
+
+    &--Philosophical-thinking {
+      background-image: linear-gradient(
+        to right bottom,
+        #b429fa 0%,
+        #25c7f4 100%
+      );
+    }
+    &--DevOps {
+      background-image: linear-gradient(
+        to right bottom,
+        #eb5e28 0%,
+        #ff006e 20%,
+        #7b2cbf 50%,
+        #0d41e1 90%
+      );
+    }
+
+    &:hover {
+      transform: scale(1.07);
+    }
+
+    &__icon {
+      height: 9.8rem;
+      fill: #fff;
+      margin: 3.2rem auto 1.2rem auto;
+    }
+  }
+}

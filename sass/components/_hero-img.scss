@@ -1,0 +1,49 @@
+.hero__img {
+  &--wrapper {
+    position: relative;
+  }
+
+  &--wrapper::before,
+  &--wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  &--wrapper::before {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+      ),
+      url(../Imgs/hero-img--background.png);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+    animation: animate__after 8s ease-in-out infinite;
+  }
+
+  &--wrapper::after {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    z-index: 2;
+    animation: animate__before 8s ease-in-out infinite;
+  }
+
+  &__image {
+    width: 100%;
+    z-index: 3;
+    position: relative;
+    vertical-align: middle;
+    animation: animate__before 8s ease-in-out infinite;
+  }
+}

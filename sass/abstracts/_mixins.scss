@@ -1,0 +1,9 @@
+@mixin center-container {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+@mixin section-padding {
+  padding: 9.6rem 0 9.6rem 0;
+}

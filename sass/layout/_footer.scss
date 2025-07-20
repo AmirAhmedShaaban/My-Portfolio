@@ -1,0 +1,124 @@
+.footer {
+  &__name-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 3.6rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__name-icons__icon {
+    display: inline-block;
+    font-size: 2.4rem;
+    color: #fff;
+    margin-left: 2rem;
+    background-color: $background-color;
+    padding: 1.6rem 1.8rem;
+    border-radius: 50%;
+    box-shadow: 1rem 1.4rem 2.4rem rgba(#000, 0.2);
+
+    &--github:hover {
+      transform: scale(1.05);
+      opacity: 80%;
+    }
+
+    &--mail:hover {
+      opacity: 80%;
+      transform: scale(1.05);
+    }
+  }
+
+  &__line {
+    border: none;
+    height: 1px;
+    background-color: #333;
+  }
+
+  &__content-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2.4rem;
+    gap: 15rem;
+  }
+
+  &__anchor {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  &__header {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+  }
+}
+
+.column {
+  &__text {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.connect__icon {
+  margin-right: 1rem;
+}
+
+.fa-folder-open {
+  margin-left: 0.3rem;
+  font-size: 2.4rem;
+}
+
+.btn--noanimation--footer:link,
+.btn--noanimation--footer:visited {
+  padding: 1.6rem 2.4rem;
+  font-size: 1.6rem;
+  width: fit-content;
+  margin-top: 1rem;
+
+  &::after {
+    border-radius: 12px;
+  }
+}
+
+.Copyright {
+  font-size: 1.4rem;
+  margin-top: 2.4rem;
+}
