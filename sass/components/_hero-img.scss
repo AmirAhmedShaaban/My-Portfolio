@@ -46,4 +46,10 @@
     vertical-align: middle;
     animation: animate__before 8s ease-in-out infinite;
   }
+
+  @include respond(phone) {
+    grid-row: 1;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
 }

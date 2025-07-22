@@ -46,6 +46,22 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 2.4rem;
     gap: 15rem;
+
+    @include respond(mid-desktop) {
+      gap: 12rem;
+    }
+
+    @include respond(tap-port) {
+      gap: 2rem;
+      justify-items: center;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+      column-gap: 3rem;
+      row-gap: 5rem;
+    }
   }
 
   &__anchor {

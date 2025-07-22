@@ -59,3 +59,11 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.5);
   }
 }
+
+.hero__text {
+  @include respond(phone) {
+    max-width: 90rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

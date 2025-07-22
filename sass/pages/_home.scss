@@ -10,6 +10,10 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 8.6rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -45,6 +49,14 @@
 .work {
   @include center-container;
   text-align: center;
+
+  @include respond(tap-port) {
+    max-width: 100rem;
+  }
+
+  @include respond(phone) {
+    max-width: 50rem;
+  }
 }
 
 .section-projects {
@@ -53,6 +65,10 @@
 
 .projects {
   @include center-container;
+
+  @include respond(tap-port) {
+    max-width: 95rem;
+  }
 }
 
 .projects-container {
@@ -61,6 +77,14 @@
   gap: 2.4rem;
   align-items: center;
   justify-items: center;
+
+  @include respond(tap-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .projects-grid {
@@ -74,12 +98,20 @@
 
 .contact {
   @include center-container;
+
+  @include respond(phone) {
+    max-width: 85rem;
+  }
 }
 
 .footer {
   background-color: $cards-grey;
   box-shadow: 0 0.2rem 1rem rgba(#000, 0.8);
   padding: 6.4rem;
+
+  @include respond(phone) {
+    padding: 2.4rem;
+  }
 
   &__content {
     @include center-container;

@@ -10,6 +10,9 @@
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
+    @include respond(phone) {
+      width: 30rem;
+    }
   }
 
   &__input {
@@ -65,4 +68,8 @@
 .btn--submit {
   position: absolute;
   margin-left: 16.5rem;
+
+  @include respond(phone) {
+    margin-left: 7.5rem;
+  }
 }

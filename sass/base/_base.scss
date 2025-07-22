@@ -12,4 +12,16 @@ html {
   //This is useful for responsive design
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include respond(mid-desktop) {
+    font-size: 50%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 37.5%;
+  }
+
+  @include respond(tap-port) {
+    font-size: 31.25%;
+  }
 }
