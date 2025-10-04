@@ -71,6 +71,28 @@
       color: $primary-color;
     }
   }
+
+  &__copyrights-container {
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn--business {
+      font-size: 1.8rem;
+      padding: 1.6rem 2.4rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+
+      &__icon {
+        width: 2.6rem;
+        margin-bottom: 0.3rem;
+        fill: $primary-color;
+      }
+    }
+  }
 }
 
 .cta {
@@ -135,6 +157,5 @@
 }
 
 .Copyright {
-  font-size: 1.4rem;
-  margin-top: 2.4rem;
+  font-size: 1.8rem;
 }

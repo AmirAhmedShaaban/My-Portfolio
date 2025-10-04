@@ -5,7 +5,7 @@
 
   &--wrapper::before,
   &--wrapper::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
   }
@@ -16,7 +16,7 @@
         rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0)
       ),
-      url(../Imgs/hero-img--background.png);
+      url(../Imgs/hero-img--background.webp);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
@@ -40,7 +40,9 @@
   }
 
   &__image {
-    width: 100%;
+    max-width: 100%;
+    width: 80rem;
+    height: auto;
     z-index: 3;
     position: relative;
     vertical-align: middle;

@@ -20,8 +20,4 @@ html {
   @include respond(tab-land) {
     font-size: 37.5%;
   }
-
-  @include respond(tap-port) {
-    font-size: 31.25%;
-  }
 }

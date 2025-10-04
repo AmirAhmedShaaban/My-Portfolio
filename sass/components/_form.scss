@@ -11,7 +11,7 @@
       margin-bottom: 2rem;
     }
     @include respond(phone) {
-      width: 30rem;
+      width: 37rem;
     }
   }
 
@@ -40,8 +40,8 @@
     }
 
     &:focus:invalid {
-      border-left: 2px solid #d2042d;
-      border-right: 2px solid #d2042d;
+      border-left: 2px solid #fb8c00;
+      border-right: 2px solid #fb8c00;
     }
 
     &::-webkit-input-placeholder {
@@ -68,8 +68,9 @@
 .btn--submit {
   position: absolute;
   margin-left: 16.5rem;
+  font-family: inherit;
 
   @include respond(phone) {
-    margin-left: 7.5rem;
+    margin-left: 10.5rem;
   }
 }

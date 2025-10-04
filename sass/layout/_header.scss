@@ -9,7 +9,7 @@
   .main-nav {
     background-color: rgb($background-color, 0.2);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: 2rem;
     padding: 0.8rem 1rem;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -23,6 +23,9 @@
       list-style: none;
       display: flex;
       gap: 1px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     &__link {
@@ -31,13 +34,49 @@
       font-size: 1.8rem;
       font-weight: 500;
       padding: 1.2rem 0.8rem;
-      border-radius: 12px;
+      border-radius: 1.1rem;
       color: #fff;
 
+      &.active,
       &:hover {
         background-color: #fafafa;
         color: #1c1e21;
       }
     }
   }
+}
+
+.icons-menu {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  font-size: 3.6rem;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  cursor: pointer;
+
+  @include respond(phone) {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+}
+
+.icons-close {
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  font-size: 3.6rem;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }

@@ -4,6 +4,11 @@
   width: 45rem;
   position: relative;
 
+  @include respond(phone) {
+    height: 60rem;
+    width: 55rem;
+  }
+
   &__side {
     height: 50rem;
     width: 45rem;
@@ -13,6 +18,11 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @include respond(phone) {
+      height: 60rem;
+      width: 55rem;
+    }
 
     &--front {
       background-color: $cards-grey;
@@ -44,6 +54,11 @@
     transform: translate(-50%, 0);
     z-index: 1;
 
+    @include respond(phone) {
+      width: 85%;
+      height: 25rem;
+    }
+
     &__img {
       position: absolute;
       width: 100%;
@@ -55,21 +70,21 @@
     }
 
     &__img--Blaban {
-      background-image: url(../Imgs/Projects/Blaban-Project.png);
+      background-image: url(../Imgs/Projects/Blaban-Project.webp);
     }
 
     &__img--Portfolio {
-      background-image: url(../Imgs/Projects/Portfolio-Project.png);
+      background-image: url(../Imgs/Projects/Portfolio-Project.webp);
     }
 
-    &__img-- {
-      background-image: url(../);
+    &__img--Petrojet {
+      background-image: url(../Imgs/Projects/Petrojet-Project.webp);
     }
 
     &::after,
     &::before {
       box-sizing: content-box;
-      content: "";
+      content: '';
       position: absolute;
       height: 100%;
       width: 100%;
@@ -104,23 +119,57 @@
     font-size: 2.8rem;
     font-weight: 800;
     margin-bottom: 1.6rem;
+
+    &--flip {
+      display: none;
+
+      @include respond(tab-land) {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+        color: #fff;
+        margin-top: 3.6rem;
+
+        &__icon {
+          height: 3rem;
+          width: 3rem;
+          fill: #fff;
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
   }
 
   &__btn1 {
     position: absolute;
     top: 22%;
     left: 28%;
+
+    @include respond(phone) {
+      left: 31%;
+    }
   }
 
   &__btn2.btn.btn--blue {
     position: absolute;
     top: 42%;
     left: 29.2%;
+
+    @include respond(phone) {
+      left: 32.2%;
+    }
   }
 
   &__btn3.btn.btn--noanimation {
     position: absolute;
     top: 62%;
     left: 28.2%;
+
+    @include respond(phone) {
+      left: 31.2%;
+    }
   }
 }

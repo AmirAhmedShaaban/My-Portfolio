@@ -11,7 +11,7 @@
 */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1;
   font-weight: 400;
   background-color: $background-color;
@@ -26,6 +26,7 @@ body {
     margin-bottom: 2.4rem;
   }
 
+  h1,
   &--main {
     display: block;
     font-size: 6.2rem;

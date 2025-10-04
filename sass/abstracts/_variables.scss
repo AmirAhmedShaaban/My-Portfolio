@@ -7,7 +7,7 @@ $cards-grey: #212329;
 
 // Border animation
 @property --angle {
-  syntax: "<angle>";
+  syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
 }

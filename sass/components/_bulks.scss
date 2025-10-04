@@ -3,10 +3,12 @@
   gap: 2.4rem;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 
   @include respond(tap-port) {
     flex-wrap: wrap;
     max-width: 120rem;
+    gap: 3.6rem;
   }
 
   &__bulk {
@@ -17,7 +19,9 @@
     transition: all 0.3s;
     text-align: center;
 
-    @include respond(tap-port) {
+    @include respond(phone) {
+      height: 45rem;
+      width: 55rem;
     }
 
     &__text {
@@ -27,6 +31,10 @@
       letter-spacing: 3px;
       line-height: 1.2;
       margin-top: 1.6rem;
+
+      @include respond(phone) {
+        font-size: 5.2rem;
+      }
 
       & span {
         text-transform: none;
@@ -76,6 +84,11 @@
       height: 9.8rem;
       fill: #fff;
       margin: 3.2rem auto 1.2rem auto;
+
+      @include respond(phone) {
+        height: 13.2rem;
+        margin: 6.4rem auto 2.4rem auto;
+      }
     }
   }
 }
