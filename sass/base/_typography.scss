@@ -55,6 +55,10 @@ body {
   color: transparent;
   transition: all 0.3s;
 
+  @include respond(phone) {
+    max-width: 70rem;
+  }
+
   &:hover {
     transform: scale(1.05);
     text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.5);

@@ -25,7 +25,7 @@
 
     @include respond(phone) {
       height: 60rem;
-      width: 75%;
+      width: 83%;
     }
 
     &__content {
@@ -47,7 +47,7 @@
     &::after,
     &::before {
       box-sizing: content-box;
-      content: "";
+      content: '';
       position: absolute;
       height: 100%;
       width: 100%;

@@ -108,6 +108,11 @@ body {
   color: transparent;
   transition: all 0.3s;
 }
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    max-width: 70rem;
+  }
+}
 .heading-secondary:hover {
   transform: scale(1.05);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -131,6 +136,10 @@ body {
 
 .u-margin-right-sm {
   margin-right: 3.2rem;
+}
+
+.u-margin-bottom {
+  margin-bottom: 3.2rem;
 }
 
 .bulks {
@@ -485,6 +494,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  justify-content: center;
   gap: 2.4rem;
 }
 @media (max-width: 56.25em) {
@@ -533,8 +543,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .certifications__img {
-    width: 51rem;
-    height: 30rem;
+    width: 49rem;
+    height: 33.5rem;
   }
 }
 
@@ -562,7 +572,7 @@ body {
 @media (max-width: 37.5em) {
   .connect__box--wrapper {
     height: 60rem;
-    width: 75%;
+    width: 83%;
   }
 }
 .connect__box--wrapper__content {
@@ -668,7 +678,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .form__group {
-    width: 37rem;
+    width: 36rem;
   }
 }
 .form__input {
@@ -721,7 +731,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .btn--submit {
-    margin-left: 10.5rem;
+    margin-left: 9rem;
   }
 }
 
@@ -1198,6 +1208,7 @@ body {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .footer__copyrights-container .btn--business__icon {
   width: 2.6rem;
@@ -1453,6 +1464,7 @@ body {
   gap: 5.2rem;
   align-items: center;
   justify-items: center;
+  justify-content: center;
 }
 @media (max-width: 56.25em) {
   .projects-container {

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-
+  justify-content: center;
   gap: 2.4rem;
 
   @include respond(tap-port) {
@@ -48,8 +48,8 @@
     }
 
     @include respond(phone) {
-      width: 51rem;
-      height: 30rem;
+      width: 49rem;
+      height: 33.5rem;
     }
   }
 }

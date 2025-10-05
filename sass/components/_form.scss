@@ -10,8 +10,9 @@
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
+
     @include respond(phone) {
-      width: 37rem;
+      width: 36rem;
     }
   }
 
@@ -71,6 +72,6 @@
   font-family: inherit;
 
   @include respond(phone) {
-    margin-left: 10.5rem;
+    margin-left: 9rem;
   }
 }
